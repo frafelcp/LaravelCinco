@@ -13,6 +13,8 @@
                         @include('admin.users.partials.field')
                         <button type="submit" class="btn btn-default">Actualizar Usuario</button>
                     {!! Form::close() !!}
+                    <br>
+                    @include('admin.users.partials.delete')
                 </div>
             </div>
         </div>
