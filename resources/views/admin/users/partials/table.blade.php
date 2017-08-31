@@ -15,7 +15,7 @@
                                     <td>{{$user->email}}</td>
                                     <td>
                                         <a href="{{route('users.edit', $user->id)}}">Editar</a>
-                                        <a href="{{route('users.destroy', $user->id)}}">Eliminar</a>
+                                        <a href="">Eliminar</a>
                                     </td>
                                 </tr>
                             @endforeach

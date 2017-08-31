@@ -92,7 +92,7 @@ class UserController extends Controller
     {
         $user = User::findOrFail($id);
         $user->delete();
-        \Session::flash('message', 'El registro fue eliminado');
-        return redirect()->route('admin.users.index');
+        \Session::flash('message', $user->fullname . 'fue eliminado');
+        return redirect('admin/users');
     }
 }
